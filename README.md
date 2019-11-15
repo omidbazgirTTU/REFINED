@@ -3,4 +3,4 @@ This repository is made temporarily to share the REFINED (Representation of Feat
 ## 1) Toolbox
 The main functions provided in the toolbox are performing below tasks:
 ### a) two_d_eq:
-The MDS function reduces dimensionality by preserving the distance in the new space as close as possible to the initial space. Therefore, when it is being used for generating coordinates in 2-D space for features, the coordinates will have arbitrary values. Hence, the first step to create images is bringing down the arbitrary values in the range [0,N], where N is the square root of the number features. This process is handled by ###two_d_eq.
+The MDS function reduces dimensionality by preserving the distance in the new space as close as possible to the initial space. Therefore, when it is being used for generating coordinates in 2-D space for features, the coordinates will have arbitrary values. Hence, the first step to create images is bringing down the arbitrary values in the range [0,N], where N is the square root of the number features. This process is handled by **two_d_eq**.
