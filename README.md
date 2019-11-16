@@ -22,6 +22,7 @@ As the hill climbing algorithms works based on minimizing the Euclidean distance
 
 ## 3) Hill climbing
 The hill climbing section of REFINED is written based on using Message Passing Interface (MPI) of python to use HPCC resource very efficiently (Thanks Ruibo!). To run this code make sure to install **mpi4py** library of Python. The hill climbing algorithm section was written based master-slave control process where the first processor is the master and other processors will slave. The master processor distribute, scatter and receive data from slave processors. Slave processors do the computational task. Some computational functions needed to run Hill climbing code should be imported from **paraHill.py**
+To run the hill climbing algorithm one need to use the **mpiHill_Hardcoded.py**. 
 
 ### a) Input
 Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter ** 1- gene_names: feature names, 2- dist_matr: Euclidean distance matrix of features in initial space, 3- init_map: feature's coordinate created by initial MDS.
