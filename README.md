@@ -21,6 +21,14 @@ This part of the code applies MDS and its post processing steps for transposed d
 As the hill climbing algorithms works based on minimizing the Euclidean distance, beside the the MDS image coordinates, a euclidean distance of features as matrice need to saved as inputs of the hill climbing. Therefore all the hill climbing required inputs are saved as a pickle.
 
 ## 3) Hill climbing
-The hill climbing section of REFINED is written based on using Message Passing Interface (MPI) of python to use HPCC resource very efficiently (Thanks Ruibo!). To run this code make sure to install **mpi4py** library of Python.
-Some computational functions needed to run Hill climbing code should be imported from **paraHill.py**
+The hill climbing section of REFINED is written based on using Message Passing Interface (MPI) of python to use HPCC resource very efficiently (Thanks Ruibo!). To run this code make sure to install **mpi4py** library of Python. The hill climbing algorithm section was written based master-slave control process where the first processor is the master and other processors will slave. The master processor distribute, scatter and receive data from slave processors. Slave processors do the computational task. Some computational functions needed to run Hill climbing code should be imported from **paraHill.py**
+
+### a) Input
+Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter ** 1- gene_names: feature names, 2- dist_matr: Euclidean distance matrix of features in initial space, 3- init_map: feature's coordinate created by initial MDS.
+
+### b) Parameters
+The only parameter that user of this algorithm need to choose is number of iterations. Number of iterations is basically how many times the hill climbing goes over the entire features and check each feature exchange cost. Defaults is NI = 5.
+
+### c) Output
+The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **coords**.
 
