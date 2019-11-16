@@ -19,3 +19,8 @@ This part of the code applies MDS and its post processing steps for transposed d
 
 ### c) Saving hill climbing inputs
 As the hill climbing algorithms works based on minimizing the Euclidean distance, beside the the MDS image coordinates, a euclidean distance of features as matrice need to saved as inputs of the hill climbing. Therefore all the hill climbing required inputs are saved as a pickle.
+
+## 3) Hill climbing
+The hill climbing section of REFINED is written based on using Message Passing Interface (MPI) of python to use HPCC resource very efficiently (Thanks Ruibo!). To run this code make sure to install **mpi4py** library of Python.
+Some computational functions needed to run Hill climbing code should be imported from **paraHill.py**
+
