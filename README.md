@@ -38,7 +38,7 @@ The feature names, REFINED coordinates, and intial map will be save as the outpu
 ## Cite
 If you use REFINED for research, plase cite the following paper:
 
-REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks
+> REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks
 O Bazgir, R Zhang, SR Dhruba, R Rahman, S Ghosh, R Pal
 arXiv preprint arXiv:1912.05687
 
