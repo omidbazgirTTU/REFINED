@@ -1,6 +1,6 @@
 # REFINED
-This repository is made temporarily to share the REFINED (Representation of Features as Images with NEighborhood Dependencies). Therefore the code is not provided as an easy-to-use package. To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
-**The code is written based on a small provided csv file (small chuk of NCI padel descriptors). Try to run the code based on that and make sure you understand that properly then, run your own code :-)**
+This repository is made to share the REFINED (Representation of Features as Images with NEighborhood Dependencies). To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
+**We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset so the performance is much lower than the paper.**
 ## 1) Toolbox
 The main functions provided in the toolbox are performing below tasks:
 ### a) two_d_eq:
