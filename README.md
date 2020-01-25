@@ -1,7 +1,6 @@
 # REFINED
-preprint: https://arxiv.org/abs/1912.05687
 
-This repository is made to share the REFINED (Representation of Features as Images with NEighborhood Dependencies). To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
+This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687)(Representation of Features as Images with NEighborhood Dependencies). To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
 **We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset so the performance is much lower than the paper.**
 ## 1) Toolbox
 The main functions provided in the toolbox are performing below tasks:
@@ -36,7 +35,7 @@ The only parameter that user of this algorithm need to choose is number of itera
 The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **coords**.
 
 ## Cite
-If you use REFINED for research, plase cite the following paper:
+If you use [REFINED](https://arxiv.org/abs/1912.05687) for research, plase cite the following paper:
 
 > REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks
 O Bazgir, R Zhang, SR Dhruba, R Rahman, S Ghosh, R Pal
