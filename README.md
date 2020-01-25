@@ -1,6 +1,6 @@
 # REFINED
 
-This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687)(Representation of Features as Images with NEighborhood Dependencies). To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
+This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687) (Representation of Features as Images with NEighborhood Dependencies). To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
 **We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset so the performance is much lower than the paper.**
 ## 1) Toolbox
 The main functions provided in the toolbox are performing below tasks:
@@ -26,7 +26,7 @@ The hill climbing section of REFINED is written based on using Message Passing I
 To run the hill climbing algorithm one need to use the **mpiHill_Hardcoded.py**. 
 
 ### a) Input
-Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter ** 1- gene_names: feature names, 2- dist_matr: Euclidean distance matrix of features in initial space, 3- init_map: feature's coordinate created by initial MDS.
+Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter ** 1- 'gene_names': feature names, 2- 'dist_matr': Euclidean distance matrix of features in initial space, 3- 'init_map': feature's coordinate created by initial MDS.
 
 ### b) Parameters
 The only parameter that user of this algorithm need to choose is number of iterations. Number of iterations is basically how many times the hill climbing goes over the entire features and check each feature exchange cost. Defaults is NI = 5.
