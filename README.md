@@ -32,7 +32,7 @@ Input of hill climbing is the initial MDS output saved as pickle file. It includ
 The only parameter that user of this algorithm need to choose is number of iterations. Number of iterations is basically how many times the hill climbing goes over the entire features and check each feature exchange cost. Defaults is NI = 5.
 
 ### c) Output
-The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **coords**.
+The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **`coords`**.
 
 ## Cite
 If you use [REFINED](https://arxiv.org/abs/1912.05687) for research, plase cite the following paper:
