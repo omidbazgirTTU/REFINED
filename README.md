@@ -34,15 +34,9 @@ The only parameter that user of this algorithm need to choose is number of itera
 The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **coords**.
 
 ## Cite
-If you use this software for research, plase cite the following paper:
+If you use REFINED for research, plase cite the following paper:
 
 REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks
 O Bazgir, R Zhang, SR Dhruba, R Rahman, S Ghosh, R Pal
 arXiv preprint arXiv:1912.05687
 
-@article{bazgir2019refined,
-  title={REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks},
-  author={Bazgir, Omid and Zhang, Ruibo and Dhruba, Saugato Rahman and Rahman, Raziur and Ghosh, Souparno and Pal, Ranadip},
-  journal={arXiv preprint arXiv:1912.05687},
-  year={2019}
-}
