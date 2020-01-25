@@ -26,7 +26,7 @@ The hill climbing section of REFINED is written based on using Message Passing I
 To run the hill climbing algorithm one need to use the **mpiHill_Hardcoded.py**. 
 
 ### a) Input
-Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter ** 1- 'gene_names': feature names, 2- 'dist_matr': Euclidean distance matrix of features in initial space, 3- 'init_map': feature's coordinate created by initial MDS.
+Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter ** 1- `gene_names`: feature names, 2- `dist_matr`: Euclidean distance matrix of features in initial space, 3- `init_map`: feature's coordinate created by initial MDS.
 
 ### b) Parameters
 The only parameter that user of this algorithm need to choose is number of iterations. Number of iterations is basically how many times the hill climbing goes over the entire features and check each feature exchange cost. Defaults is NI = 5.
