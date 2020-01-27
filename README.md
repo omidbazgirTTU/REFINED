@@ -37,8 +37,12 @@ The feature names, REFINED coordinates, and intial map will be save as the outpu
 After features coordinates are found by REFINED, they can be used to convert data into images, then trai a CNN. To this end we provided a small subset of the NCI60 dataset drug descriptors and responses in the `data` folder, and the architectures that we used to train for NCI regression and classification tasks of the paper in the `train` folder.
 
 ## 5. Data
-To download the complete dataset that we used in the paper, you can use the provided links: [NCI60](https://dtp.cancer.gov/databases_tools/bulk_data.htm)
-[GDSC](https://www.cancerrxgene.org/downloads/bulk_download)
+**`NCI60`**: We downloaded the GI50 data from [NCI60_download](https://dtp.cancer.gov/databases_tools/bulk_data.htm) and the associated drug's chemical information from [Pubchem](https://pubchem.ncbi.nlm.nih.gov/).
+
+**`GDSC`**: We downloaded the IC50 responses and cell line screened data from [GDSC_download](https://www.cancerrxgene.org/downloads/bulk_download), and the drug's chemical information from [Pubchem](https://pubchem.ncbi.nlm.nih.gov/).
+
+**`PaDel`**: To convert the chemical information of each drug to their descriptors, we used [PaDel](http://www.yapcwsoft.com/dd/padeldescriptor/) software.
+
 ## Cite
 If you use [REFINED](https://arxiv.org/abs/1912.05687) for research, plase cite the following paper:
 
