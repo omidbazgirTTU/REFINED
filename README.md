@@ -44,7 +44,7 @@ After features coordinates are found by REFINED, they can be used to convert dat
 **`PaDel`**: To convert the chemical information of each drug to their descriptors, we used [PaDel](http://www.yapcwsoft.com/dd/padeldescriptor/) software.
 
 ## Cite
-If you use [REFINED](https://arxiv.org/abs/1912.05687) for research, plase cite the following paper:
+If you use [REFINED](https://arxiv.org/abs/1912.05687) for research, please cite the following paper:
 
 > REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks
 O Bazgir, R Zhang, SR Dhruba, R Rahman, S Ghosh, R Pal
