@@ -1,6 +1,6 @@
 # REFINED
 
-![REFINED_Doagram](C:\Users\obazgir\Dropbox\DL Paper\REFINED_Revision\REFINED_Diagram.jpg)
+![REFINED_Doagram](REFINED_Diagram.jpg)
 
 This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687) (Representation of Features as Images with NEighborhood Dependencies). To use the REFINED to create images corresponding to your dataset you neet to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
 **We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset so the performance is much lower than the paper.**
