@@ -36,7 +36,7 @@ The only parameter that user of this algorithm need to choose is number of itera
 - Output
 The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **`coords`**.
 ## 4. Training a CNN
-After features coordinates are found by REFINED, they can be used to convert data into images, then trai a CNN. To this end we provided a small subset of the NCI60 dataset drug descriptors and responses in the `data` folder, and the architectures that we used to train for NCI regression and classification tasks of the paper in the `train` folder. The code that we used to train the REFINED CNN model on the GDSC dataset is also provided under the `train` folder as **GDSC_train.py**
+After features coordinates are found by REFINED, they can be used to convert data into images, then trai a CNN. To this end we provided a small subset of the NCI60 dataset drug descriptors and responses in the `data` folder, and the architectures that we used to train for NCI regression and classification tasks of the paper in the `train` folder. The code that we used to train the REFINED CNN model on the GDSC dataset is also provided under the `train` folder as **GDSC_train.py**.
 
 ## 5. Data
 **`NCI60`**: We downloaded the GI50 data from [NCI60_download](https://dtp.cancer.gov/databases_tools/bulk_data.htm) and the associated drug's chemical information from [Pubchem](https://pubchem.ncbi.nlm.nih.gov/).
