@@ -6,7 +6,7 @@ This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687)
 **We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset so the performance is much lower than the paper.**
 
 ### Reuqired python packages
-To use all the provided code, installing following packages is required. All the packages can be installed using the `pip install --package name'. Installing all the packages takes less than 5 minutes.
+To use all the provided code, installing following packages is required. All the packages can be installed using the `pip install --package name`. Installing all the packages takes less than 5 minutes.
 1. Numpy
 2. Pandas
 3. Scipy
