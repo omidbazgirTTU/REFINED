@@ -6,17 +6,17 @@ This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687)
 **We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset so the performance is much lower than the paper.**
 
 ### Reuqired python packages
-`To use all the provided code, installing following packages is required.`
-`1. Numpy`
-`2. Pandas`
-`3. Scipy`
-`4. Scikit-learn`
-`5. Tensorflow`
-`6. Keras`
-`7. MPI`
-`8. Matplotlib`
-`9. Pickle`
-`10. Math`
+To use all the provided code, installing following packages is required.
+1. Numpy
+2. Pandas
+3. Scipy
+4. Scikit-learn
+5. Tensorflow
+6. Keras
+7. MPI
+8. Matplotlib
+9. Pickle
+10. Math
 
 ## 1. Toolbox
 The main functions provided in the toolbox are performing below tasks:
