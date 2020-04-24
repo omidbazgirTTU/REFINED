@@ -13,6 +13,10 @@ To use all the provided code, installing following packages is required.
 4. Scikit-learn
 5. Tensorflow
 6. Keras
+7. MPI
+8. Matplotlib
+9. Pickle
+10. Math
 
 ## 1. Toolbox
 The main functions provided in the toolbox are performing below tasks:
