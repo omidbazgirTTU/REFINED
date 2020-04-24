@@ -7,6 +7,13 @@ This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687)
 
 ### Reuqired python packages
 To use all the provided code, installing following packages is required.
+1. Numpy
+2. Pandas
+3. Scipy
+4. Scikit-learn
+5. Tensorflow
+6. Keras
+
 ## 1. Toolbox
 The main functions provided in the toolbox are performing below tasks:
 - two_d_eq:
