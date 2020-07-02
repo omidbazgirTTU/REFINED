@@ -39,7 +39,7 @@ for SEL_CEL in cell_lines:
     Cell_Features = Feat_DF[Feat_DF.NSC.isin(FilteredDF.NSC)]
     TargetDF = FilteredDF[FilteredDF.NSC.isin(Cell_Features.NSC)]
     
-    Y = np.array(TargetDF.NORMLOG50)
+    Y = np.array(TargetDF.NLOGGI50)
     # Features
     X = Cell_Features.values
     X = X[:,2:]
@@ -63,7 +63,7 @@ for SEL_CEL in cell_lines:
     Y_Validation = TargetDF[TargetDF.NSC.isin(Validation_Ind)];  Y_Validation = np.array(Y_Validation['NORMLOG50']) 
     Y_Test = TargetDF[TargetDF.NSC.isin(Test_Ind)];  Y_Test = np.array(Y_Test['NORMLOG50']) 
     
-    Threshold = 0.55
+    Threshold = 4.25
     # Convert the drug responses into "Resistive" and "Sensitive" classes given the provided threshold
 	Y_Train_Class = Reg_to_Class(Y_Train,Threshold);  
     Y_Validation_Class = Reg_to_Class(Y_Validation,Threshold);

@@ -33,7 +33,7 @@ for SEL_CEL in cell_lines:
     Cell_Features = Feat_DF[Feat_DF.NSC.isin(FilteredDF.NSC)]
     TargetDF = FilteredDF[FilteredDF.NSC.isin(Cell_Features.NSC)]
     
-    Y = np.array(TargetDF.NORMLOG50)
+    Y = np.array(TargetDF.NLOGGI50)
     # Features
     X = Cell_Features.values
     X = X[:,2:]
