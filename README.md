@@ -2,7 +2,7 @@
 
 ![REFINED_Doagram](REFINED_Diagram.jpg)
 
-This repository is made to share the [REFINED](https://arxiv.org/abs/1912.05687) (Representation of Features as Images with NEighborhood Dependencies). To use the REFINED and create images corresponding to your dataset you need to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
+This repository is made to share the [REFINED](https://www.nature.com/articles/s41467-020-18197-y) (Representation of Features as Images with NEighborhood Dependencies). To use the REFINED and create images corresponding to your dataset you need to use the following codes step by step. REFINED contains two main cores, initial MDS and hill climbing, where both are eucliadean distance based. First the initiall coordinates will be created by MDS initializer part, then the coordinates will be updated by the hill climbing. Multiple functions are being used in the process, hence a Toolpox.py is provided which includes all the function needed. 
 **We added small subset of processed NCI60 data in the data folder for the users to be able to use the code. Note that due to the size of the dataset, the performance is much lower than the paper.**
 
 ### Reuqired python packages
@@ -64,9 +64,7 @@ After features coordinates are found by REFINED, they can be used to convert dat
 ## 6. Syntethic data
 The code for generating the synthetic data and modeling with the CNN model are provided in the `Syntethic data` folder. Please note that, after generating the data using **Synthetic_Data.py** one need to generated coordinates using the REFINED algorithm, then use the **Synthetic_CNN.py** for modeling.
 ## Cite
-If you use [REFINED](https://arxiv.org/abs/1912.05687) for research, please cite the following paper:
+If you use [REFINED](https://www.nature.com/articles/s41467-020-18197-y) for research, please cite the following paper:
 
-> REFINED (REpresentation of Features as Images with NEighborhood Dependencies): A novel feature representation for Convolutional Neural Networks
-O Bazgir, R Zhang, SR Dhruba, R Rahman, S Ghosh, R Pal
-arXiv preprint arXiv:1912.05687
+> Bazgir, Omid, Ruibo Zhang, Saugato Rahman Dhruba, Raziur Rahman, Souparno Ghosh, and Ranadip Pal. "Representation of features as images with neighborhood dependencies for compatibility with convolutional neural networks." Nature Communications 11, no. 1 (2020): 1-13.
 
