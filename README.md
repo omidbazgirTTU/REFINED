@@ -52,7 +52,7 @@ The feature names, REFINED coordinates, and intial map will be save as the outpu
 
 #### Please note that, it is recommended to use the REFINED code on HPCC as it is a time-consuming process. For the NCI60 dataset, if your PC has sufficient memory, it takes more than 12 hourse to run. But, as it is recommended, if you use a HPC system, it takes less than an hour. 
 
-mpirun -np $NSLOTS python3 mpiHill_UF.py --init 'Init.pickle'	--mapping 'Mapping.pickle'  --evolution "Evolv.csv" --num 5
+> mpirun -np $NSLOTS python3 mpiHill_UF.py --init 'Init.pickle'	--mapping 'Mapping.pickle'  --evolution "Evolv.csv" --num 5
 
 ## 4. Training a CNN
 After features coordinates are found by REFINED, they can be used to convert data into images, then trai a CNN. To this end we provided a small subset of the NCI60 dataset drug descriptors and responses in the `data` folder, and the architectures that we used to train for NCI regression and classification tasks of the paper in the `train` folder. The code that we used to train the REFINED CNN model on the GDSC dataset is also provided under the `train` folder as **GDSC_train.py**.
