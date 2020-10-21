@@ -39,7 +39,7 @@ As the hill climbing algorithms works based on minimizing the Euclidean distance
 
 ## 3. Hill climbing
 The hill climbing section of REFINED is written based on using Message Passing Interface (MPI) of python to use HPCC resource very efficiently. To run this code make sure to install **mpi4py** library of Python. The hill climbing algorithm section was written based master-slave control process where the first processor is the master and other processors will slave. The master processor distribute, scatter and receive data from slave processors. Slave processors do the computational task. Some computational functions needed to run Hill climbing code should be imported from **paraHill.py**
-To run the hill climbing algorithm one need to use the **mpiHill_Hardcoded.py**. 
+To run the hill climbing algorithm one need to use the **mpiHill_UF.py**. 
 
 - Input
 Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter;  **`gene_names`**: feature names, **`dist_matr`**: Euclidean distance matrix of features in initial space, **`init_map`**: feature's coordinate created by initial MDS.
@@ -50,9 +50,13 @@ The only parameter that user of this algorithm need to choose is number of itera
 - Output
 The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **`coords`**.
 
+- Example
+The below bash script can be used as an example for running the **mpiHill_UF.py**.
+> mpirun -np $NSLOTS python3 mpiHill_UF.py --init 'Init.pickle'	--mapping 'Mapping.pickle'  --evolution "Evolv.csv" --num 5
+
 #### Please note that, it is recommended to use the REFINED code on HPCC as it is a time-consuming process. For the NCI60 dataset, if your PC has sufficient memory, it takes more than 12 hourse to run. But, as it is recommended, if you use a HPC system, it takes less than an hour. 
 
-> mpirun -np $NSLOTS python3 mpiHill_UF.py --init 'Init.pickle'	--mapping 'Mapping.pickle'  --evolution "Evolv.csv" --num 5
+
 
 ## 4. Training a CNN
 After features coordinates are found by REFINED, they can be used to convert data into images, then trai a CNN. To this end we provided a small subset of the NCI60 dataset drug descriptors and responses in the `data` folder, and the architectures that we used to train for NCI regression and classification tasks of the paper in the `train` folder. The code that we used to train the REFINED CNN model on the GDSC dataset is also provided under the `train` folder as **GDSC_train.py**.
