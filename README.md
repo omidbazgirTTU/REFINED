@@ -41,16 +41,16 @@ As the hill climbing algorithms works based on minimizing the Euclidean distance
 The hill climbing section of REFINED is written based on using Message Passing Interface (MPI) of python to use HPCC resource very efficiently. To run this code make sure to install **mpi4py** library of Python. The hill climbing algorithm section was written based master-slave control process where the first processor is the master and other processors will slave. The master processor distribute, scatter and receive data from slave processors. Slave processors do the computational task. Some computational functions needed to run Hill climbing code should be imported from **paraHill.py**
 To run the hill climbing algorithm one need to use the **mpiHill_UF.py**. 
 
-- Input
+- Input:
 Input of hill climbing is the initial MDS output saved as pickle file. It includes three parameter;  **`gene_names`**: feature names, **`dist_matr`**: Euclidean distance matrix of features in initial space, **`init_map`**: feature's coordinate created by initial MDS.
 
-- Parameters
+- Parameters:
 The only parameter that user of this algorithm need to choose is number of iterations. Number of iterations is basically how many times the hill climbing goes over the entire features and check each feature exchange cost. Defaults is NI = 5.
 
-- Output
+- Output:
 The feature names, REFINED coordinates, and intial map will be save as the output of hill climbing in a pickle file. REFINED are coordinates are saved in **`coords`**.
 
-- Example
+- Example:
 The below bash script can be used as an example for running the **mpiHill_UF.py**.
 > mpirun -np $NSLOTS python3 mpiHill_UF.py --init 'Init.pickle'	--mapping 'Mapping.pickle'  --evolution "Evolv.csv" --num 5
 
