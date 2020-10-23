@@ -60,8 +60,13 @@ After features coordinates are found by REFINED, they can be used to convert dat
 **`GDSC`**: We downloaded the IC50 responses and cell line screened data from [GDSC_download](https://www.cancerrxgene.org/downloads/bulk_download), and the drug's chemical information from [Pubchem](https://pubchem.ncbi.nlm.nih.gov/).
 
 **`PaDel`**: To convert the chemical information of each drug to their descriptors, we used [PaDel](http://www.yapcwsoft.com/dd/padeldescriptor/) software.
-## 6. Syntethic data
+## 5. Syntethic data
 The code for generating the synthetic data and modeling with the CNN model are provided in the `Syntethic data` folder. Please note that, after generating the data using **Synthetic_Data.py** one need to generated coordinates using the REFINED algorithm, then use the **Synthetic_CNN.py** for modeling.
+
+## 6. Visualization with REFINED
+**REFINED_Viz.ipynb** is also provided to show how REFINED can be used to represent a datapoint (sample) in a dataset as an image.
+
+
 ## Cite
 If you use [REFINED](https://www.nature.com/articles/s41467-020-18197-y) for research, please cite the following paper:
 
